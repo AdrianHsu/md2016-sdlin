@@ -11,15 +11,15 @@ def bigram():
       if not _line: break
       a = _line[0]
       b = _line[2]
-      f = float(sys.maxsize)
+      f = 0.0
       if len(_line) > 5:
          try:
             _str = argv[len(argv) - 1]
             f = float(_str)
          except ValueError:
-            f = float(sys.maxsize)
+            f = 0.0
       else:
-         f = float(sys.maxsize)
+         f = 0.0
       print(a + " " + b + " ", end="")
       print(f)
    _file.close
@@ -33,15 +33,15 @@ def encoding():
       if not _line: break
       x = _line[0]
       y = _line[2]
-      p = float(sys.maxsize)
+      p = 0.0
       if len(_line) > 5:
          try:
             _str = argv[len(argv) - 1]
             p = float(_str)
          except ValueError:
-            p = float(sys.maxsize)
+            p = 0.0
       else:
-         p = float(sys.maxsize)
+         p = 0.0
       print(x + " " + y + " ", end="")
       print(p)
 
