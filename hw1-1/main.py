@@ -107,23 +107,18 @@ def main():
    bigram()
    encoding()
    d = viterbi.Decoder(pi.T, trans, obs)
-
    test(d)
-   
-   #print ord('a'), #97, chr(97) = 'a'
-   #print ord('z'), #122
+
    #print ord('0'), #48
    #print ord('9')  #57
+   #print ord('a'), #97, chr(97) = 'a'
+   #print ord('z'), #122
    #print ord(' ')  #32
    #print index('0'), # = 0
    #print index('9'), # = 9
    #print index('a'), # = 10
    #print index('z'), # = 35
    #print index(' ')  # = 36
-   #print char(0),
-   #print char(9),
-   #print char(10),
-   #print char(35)
 
 
 if __name__ == '__main__':
