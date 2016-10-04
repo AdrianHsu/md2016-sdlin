@@ -1,4 +1,8 @@
 slides
 out
+*.pages
 *.pdf
 *.ppt
+*.tar.gz
+*.tar
+*.zip
