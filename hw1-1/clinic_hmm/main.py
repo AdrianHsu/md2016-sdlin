@@ -40,6 +40,7 @@ def print_dptable(V):
             print "%.7s" % ("%f" % V[t][y]),
         print
 
+# 噴出來的observation 不知道是從哪一個state噴出來的
 # 看到一個觀察序列 o 1 o 2 ...... o T ，
 # 但是看不到狀態序列 s 1 s 2 ...... s T 的情況下，
 # 從所有可能的路徑當中，找出機率最大的一條路徑，以及其機率。e.g.結果：(0.01512, ['Healthy', 'Healthy', 'Fever']) 
@@ -52,7 +53,7 @@ def viterbi(obs, states, start_p, trans_p, emit_p):
 		V[ 0 ][ y ] = start_p[ y ] * emit_p[y][obs[0]]
 		path[y] = [y]
 	
-	# 跑 Viterbi alog. for時間 t > 0
+	# 跑 Viterbi alg. for時間 t > 0
 	for t in range(1, len(obs)):
 		V.append({})
 		newpath = {}
