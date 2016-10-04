@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import numpy
 import sys
 
 # Bigram language model
 def bigram():
-   _file = open('bigram.txt', 'r', encoding='utf-8')
+   _file = open('bigram.txt', 'r')
    while True:
       _line = _file.readline()
       argv = _line.split(' ')
@@ -21,13 +21,13 @@ def bigram():
             f = 0.0
       else:
          f = 0.0
-      print(a + " " + b + " ", end="")
-      print(f)
+      print a + " " + b,
+      print f
    _file.close
 
 # Encoding Table
 def encoding():
-   _file = open('encode.txt', 'r', encoding='utf-8')
+   _file = open('encode.txt', 'r')
    while True:
       _line = _file.readline()
       argv = _line.split(' ')
@@ -43,8 +43,8 @@ def encoding():
             p = 0.0
       else:
          p = 0.0
-      print(x + " " + y + " ", end="")
-      print(p)
+      print x + " " + y,
+      print p
 
    _file.close
 
