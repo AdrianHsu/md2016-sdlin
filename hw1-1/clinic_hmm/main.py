@@ -7,6 +7,8 @@ states = ('Healthy', 'Fever')
 # 測資，丟進去的observation序列（V，HMM才有這個）
 observations = ('normal', 'cold', 'dizzy')
 # 結果：(0.01512, ['Healthy', 'Healthy', 'Fever']) 
+# 0.6 * 0.5 * 0.7 * 0.4 * 0.3 * 0.6 = 0.01512
+
 observations_2 = ('normal', 'cold', 'normal')
 # 結果：(0.0294, ['Healthy', 'Healthy', 'Healthy'])
 observations_3 = ('dizzy', 'cold', 'normal')
