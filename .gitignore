@@ -1,5 +1,7 @@
 slides
 out
+*.bin
+*.num
 *.pages
 *.pdf
 *.ppt
